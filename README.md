@@ -1,2 +1,0 @@
-# wry.github.io
-www
