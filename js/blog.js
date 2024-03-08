@@ -30,6 +30,7 @@ function show_page(page) {
     .then((response) => response.text())
     .then((page) => {
         const converter = new showdown.Converter();
+        converter.setOption('strikethrough', true);
         document.querySelector(`#content`).innerHTML = converter.makeHtml(page);
     });
 }
